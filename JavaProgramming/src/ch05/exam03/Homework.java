@@ -20,6 +20,24 @@ public class Homework {
 				// 1. 목록 을 선택했을 때 실행되는 부분
 				// 번호  제목  글쓴이  조회수 
 				// 를 표시하는 목록이 나타난다.
+				
+				// 입력된 글이 있는지 확인. 있으면 true 없으면 false
+				boolean articleIs = false;
+				
+				// 목록에 글이 없으면 contentIs가 false가 되고 있으면 true가 된다.
+				for ( String[] noArticle : article ) {
+					if ( noArticle != null ) {
+						articleIs = true;
+					}
+				}
+				
+				// 입력된 글이 없을 때 다음을 실행하지 않고, continue를 실행해서 while의 처음으로 돌아간다.
+				if( articleIs == false ) {
+					System.out.println("저장되어있는 글이 없습니다. ");
+					continue;
+				}
+				
+				// 입력된 글이 있으면 아래를 실행한다.
 				System.out.println("***************************************");
 				System.out.println("번호\t제목\t\t글쓴이\t조회수");
 				System.out.println("***************************************");
