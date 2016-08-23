@@ -36,7 +36,7 @@ public class Homework {
 					System.out.println("저장되어있는 글이 없습니다. ");
 					continue;
 				}
-				
+				 
 				// 입력된 글이 있으면 아래를 실행한다.
 				System.out.println("***************************************");
 				System.out.println("번호\t제목\t글쓴이\t조회수");
