@@ -120,7 +120,7 @@ public class Homework {
 					
 					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
 					if ( excBool == false ) {
-						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						System.out.println(" ** 잘못 입력하셨습니다 ** ");
 						continue;
 					}
 					
@@ -197,7 +197,7 @@ public class Homework {
 					
 					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
 					if ( excBool == false ) {
-						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						System.out.println(" ** 잘못 입력하셨습니다 ** ");
 						continue;
 					}
 					
@@ -286,7 +286,7 @@ public class Homework {
 					
 					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
 					if ( excBool == false ) {
-						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						System.out.println(" ** 잘못 입력하셨습니다 ** ");
 						continue;
 					}
 					
