@@ -27,7 +27,7 @@ public class Homework {
 				// 목록에 글이 없으면 contentIs가 false가 되고 있으면 true가 된다.
 				for ( String[] noArticle : article ) {
 					if ( noArticle != null ) {
-						articleIs = true;
+						articleIs = true; 
 					}
 				}
 				
