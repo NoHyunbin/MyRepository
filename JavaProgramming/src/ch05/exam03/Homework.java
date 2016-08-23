@@ -102,26 +102,48 @@ public class Homework {
 				System.out.println("***************************************");
 				System.out.println();
 				
-				// 상세하게 볼 글의 번호를 입력 받는다.
-				System.out.print("자세히 볼 글의 번호를 입력하세요 : ");
-				int num = Integer.parseInt(scanner.nextLine());
-				System.out.println();
-				
-				// 입력한 번호에 해당하는 글이 없으면 에러 메세지 출력
-				// 있으면 번호, 제목, 글쓴이, 조회수, 내용 출력. 후 조회수 1 증가.
-				if ( article[num] == null ) {
-					System.out.println("입력하신 번호에 해당하는 글이 없습니다. " );
-				} else {
-					// 조회수 1 증가
-					article[num][3] = String.valueOf( 1 + Integer.parseInt(article[num][3]) );
+				while ( true ) {
+					// 상세하게 볼 글의 번호를 입력 받는다.
+					System.out.print("자세히 볼 글의 번호를 입력하세요 : ");
+					
+					// 문자가 입력되었을 때의 예외 처리 변수
+					boolean excBool = false;
+					
+					// 입력된 값이 0~99 사이의 수이면 excBool이 true가 된다.
+					String intException = scanner.nextLine();
+					for ( int i = 0 ; i < 100 ; i++ ) {
+						if ( intException.equals(String.valueOf(i)) ) {
+							excBool = true;
+							break;
+						}
+					}
+					
+					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
+					if ( excBool == false ) {
+						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						continue;
+					}
+					
+					int num = Integer.parseInt(intException);
+					
+					// 입력한 번호에 해당하는 글이 없으면 에러 메세지 출력
+					// 있으면 번호, 제목, 글쓴이, 조회수, 내용 출력. 후 조회수 1 증가.
+					if ( article[num] == null ) {
+						System.out.println("입력하신 번호에 해당하는 글이 없습니다. " );
+					} else {
+						// 조회수 1 증가
+						article[num][3] = String.valueOf( 1 + Integer.parseInt(article[num][3]) );
 
-					// 번호, 제목, 글쓴이, 조회수, 내용 출력
-					System.out.println("번호 : " + article[num][0]);
-					System.out.println("제목 : " + article[num][1]);
-					System.out.println("글쓴이 : " + article[num][2]);
-					System.out.println("조회수 : " + article[num][3]);
-					System.out.println("내용 : ");
-					System.out.println(article[num][4]);
+						// 번호, 제목, 글쓴이, 조회수, 내용 출력
+						System.out.println("번호 : " + article[num][0]);
+						System.out.println("제목 : " + article[num][1]);
+						System.out.println("글쓴이 : " + article[num][2]);
+						System.out.println("조회수 : " + article[num][3]);
+						System.out.println("내용 : ");
+						System.out.println(article[num][4] + "\n");
+					}
+					
+					break;
 				}
 				
 			} else if ( choice.equals("4") ) {
@@ -157,37 +179,60 @@ public class Homework {
 				System.out.println("***************************************");
 				System.out.println();
 				
-				// 수정할 글의 번호를 입력 받는다.
-				System.out.print("수정할 글의 번호를 입력하세요 : ");
-				int num = Integer.parseInt(scanner.nextLine());
-				
-				// 입력된 번호에 일치하는 글이 없는 경우(if), 와 일치하는 글이 있는 경우(else)
-				if ( article[num] == null ) {
-					System.out.println("입력하신 번호의 글이 없습니다.");
-				} else {
-					while ( true ) {
-						System.out.print("수정할 부분을 선택하세요 (1. 제목 | 2. 내용 | 3. 취소) : " );
-						int modNum = Integer.parseInt(scanner.nextLine());
-						
-						if ( modNum == 3 ) {
+				while ( true ) {
+					// 수정할 글의 번호를 입력 받는다.
+					System.out.print("수정할 글의 번호를 입력하세요 : ");
+					
+					// 문자가 입력되었을 때의 예외 처리 변수
+					boolean excBool = false;
+					
+					// 입력된 값이 0~99 사이의 수이면 excBool이 true가 된다.
+					String intException = scanner.nextLine();
+					for ( int i = 0 ; i < 100 ; i++ ) {
+						if ( intException.equals(String.valueOf(i)) ) {
+							excBool = true;
 							break;
-						} else if ( modNum == 1 ) {
-							System.out.println("현재 제목은 \"" + article[num][modNum] + "\"입니다.");
-							System.out.print("수정할 제목을 입력 하세요 : ");
-							article[num][modNum] = scanner.nextLine();
-							System.out.println("수정되었습니다. ");
-							break;
-						} else if ( modNum == 2 ) {
-							System.out.println("현재 내용은 \"" + article[num][modNum+2] + "\"입니다.");
-							System.out.print("수정할 내용을 입력 하세요 : ");
-							article[num][modNum+2] = scanner.nextLine();
-							System.out.println("수정되었습니다. ");
-							break;
-						} else {
-							System.out.println("잘못 입력하셨습니다. 1~3 사이의 숫자를 입력해 주세요.");
 						}
 					}
-						
+					
+					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
+					if ( excBool == false ) {
+						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						continue;
+					}
+					
+					int num = Integer.parseInt(intException);
+					
+					// 입력된 번호에 일치하는 글이 없는 경우(if), 와 일치하는 글이 있는 경우(else)
+					if ( article[num] == null ) {
+						System.out.println("입력하신 번호의 글이 없습니다.");
+					} else {
+						while ( true ) {
+							System.out.print("수정할 부분을 선택하세요 (1. 제목 | 2. 내용 | 3. 취소) : " );
+							int modNum = Integer.parseInt(scanner.nextLine());
+							
+							if ( modNum == 3 ) {
+								break;
+							} else if ( modNum == 1 ) {
+								System.out.println("현재 제목은 \"" + article[num][modNum] + "\"입니다.");
+								System.out.print("수정할 제목을 입력 하세요 : ");
+								article[num][modNum] = scanner.nextLine();
+								System.out.println("수정되었습니다. ");
+								break;
+							} else if ( modNum == 2 ) {
+								System.out.println("현재 내용은 \"" + article[num][modNum+2] + "\"입니다.");
+								System.out.print("수정할 내용을 입력 하세요 : ");
+								article[num][modNum+2] = scanner.nextLine();
+								System.out.println("수정되었습니다. ");
+								break;
+							} else {
+								System.out.println("잘못 입력하셨습니다. 1~3 사이의 숫자를 입력해 주세요.");
+							}
+						}
+							
+					}
+					
+					break;	
 				}
 							
 			} else if ( choice.equals("5") ) {
@@ -223,23 +268,48 @@ public class Homework {
 				System.out.println("***************************************");
 				System.out.println();
 				
-				// 삭제할 글의 번호를 입력 받는다
-				System.out.print("삭제할 글의 번호를 입력하세요 : ");
-				int num = Integer.parseInt(scanner.nextLine());
-				
-				// 입력된 번호에 일치하는 글이 없는 경우(if), 와 일치하는 글이 있는 경우(else)
-				if ( article[num] == null ) {
-					System.out.println("입력하신 번호의 글이 없습니다.");
-				} else {
-					article[num] = null;
-					System.out.println("삭제 되었습니다 ");
-				}				
+				while ( true ) {
+					// 삭제할 글의 번호를 입력 받는다
+					System.out.print("삭제할 글의 번호를 입력하세요 : ");
+					
+					// 문자가 입력되었을 때의 예외 처리 변수
+					boolean excBool = false;
+					
+					// 입력된 값이 0~99 사이의 수이면 excBool이 true가 된다.
+					String intException = scanner.nextLine();
+					for ( int i = 0 ; i < 100 ; i++ ) {
+						if ( intException.equals(String.valueOf(i)) ) {
+							excBool = true;
+							break;
+						}
+					}
+					
+					// 입력된 값이 0~99 사이의 숫자가 아니면 에러메세지를 띄우고 반복문의 처음으로 돌아간다.
+					if ( excBool == false ) {
+						System.out.println(" ** 0~99사이의 숫자를 입력하세요 ** ");
+						continue;
+					}
+					
+					int num = Integer.parseInt(intException);
+					
+					// 입력된 번호에 일치하는 글이 없는 경우(if), 와 일치하는 글이 있는 경우(else)
+					if ( article[num] == null ) {
+						System.out.println("입력하신 번호의 글이 없습니다.");
+					} else {
+						article[num] = null;
+						System.out.println("삭제 되었습니다 ");
+					}
+					
+					break;	
+				}			
 				
 			} else if ( choice.equals("6") ) {
 				// 6. 종료 를 입력 받으면 프로그램 종료 메세지를 띄운 후 프로그램을 종료한다.
 				System.out.println("프로그램을 종료합니다. " );
 				break;
 				
+			} else {
+				System.out.println("잘못 입력하셨습니다. 1~6 사이의 숫자를 입력하세요 \n");
 			}
 		}
 	}
