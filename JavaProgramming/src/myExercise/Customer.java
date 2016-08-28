@@ -12,13 +12,27 @@ public class Customer {
 	
 	// Constructor
 	Customer(){};
-	Customer(String name, String model, String transmission, String color, int downPayment){
+	Customer(String name, String model, String transmission, String color, int downPayment, int password){
 		this.name = name;
 		this.model = model;
 		this.transmission = transmission;
 		this.color = color;
 		this.downPayment = downPayment;
+		this.password = password;
 	}
 	
+	// Method
+	static void printList(Customer[] s){
+		System.out.println("------------------------------------------");
+		System.out.println(" 예약자\t 차종 \t 변속기   색상 \t 계약금");
+		System.out.println("------------------------------------------");
+		
+		for ( Customer Cus : s ) {
+			if( Cus != null) {
+				System.out.println(Cus.name + "\t" + Cus.model + "\t" + Cus.transmission + "\t" + Cus.color + "\t" + Cus.downPayment);
+			}
+		}
+		System.out.println("------------------------------------------");
+	}
 
 }
