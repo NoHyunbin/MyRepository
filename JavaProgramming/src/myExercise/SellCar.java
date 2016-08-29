@@ -8,6 +8,7 @@ public class SellCar {
 		Scanner scanner = new Scanner(System.in);
 		CarList[] carList = new CarList[100];			// 차량 목록
 		Customer[] customer = new Customer[100];		// 고객 명단
+		Customer[] history = new Customer[100];		// 판매 목록
 		int view = 1; 									// 판매자 View 고객 View 선택 변수
 		String selector;								// 목록 선택 변수
 		boolean exit = false;							// 프로그램 종료 Signal

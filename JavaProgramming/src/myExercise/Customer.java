@@ -23,16 +23,16 @@ public class Customer {
 	
 	// Method
 	static void printList(Customer[] s){
-		System.out.println("------------------------------------------");
-		System.out.println(" 예약자\t 차종 \t 변속기   색상 \t 계약금");
-		System.out.println("------------------------------------------");
+		System.out.println("-----------------------------------------------");
+		System.out.println(" 번호\t 예약자\t 차종 \t 변속기   색상 \t 계약금");
+		System.out.println("-----------------------------------------------");
 		
-		for ( Customer Cus : s ) {
-			if( Cus != null) {
-				System.out.println(Cus.name + "\t" + Cus.model + "\t" + Cus.transmission + "\t" + Cus.color + "\t" + Cus.downPayment);
+		for ( int i = 0 ; i < s.length ; i++ ) {
+			if( s[i] != null) {
+				System.out.println("  " + i + " \t" + s[i].name + "\t" + s[i].model + "\t" + s[i].transmission + "\t" + s[i].color + "\t" + s[i].downPayment);
 			}
 		}
-		System.out.println("------------------------------------------");
+		System.out.println("-----------------------------------------------");
 	}
 
 }

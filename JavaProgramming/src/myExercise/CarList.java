@@ -31,16 +31,16 @@ public class CarList {
 */
 	
 	static void printList(CarList[] s){
-		System.out.println("-----------------------------------------------------------------------------------");
-		System.out.println(" 차종 \t 남은 수량 \t 배기량 \t 최고 속도 \t 평균 연비 \t 가격");
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------------");
+		System.out.println(" 번호 \t 차종 \t 남은 수량 \t 배기량\t\t 최고 속도 \t 평균 연비 \t 가격");
+		System.out.println("------------------------------------------------------------------------------------------");
 		
-		for ( CarList CL : s ) {
-			if( CL != null) {
-				System.out.println(CL.model + "\t" + CL.amount + "대\t" + CL.engineDisplacement + "cc\t\t" + CL.maxSpeed + "km/h \t" + CL.avgFuelEfficiency + "km/L\t\t" + CL.price);
+		for ( int i = 0 ; i < s.length ; i++ ) {
+			if( s[i] != null) {
+				System.out.println("  " + i + " \t" + s[i].model + "\t" + s[i].amount + "대\t" + s[i].engineDisplacement + "cc\t\t" + s[i].maxSpeed + "km/h \t" + s[i].avgFuelEfficiency + "km/L\t\t" + s[i].price);
 			}
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------------");
 	}
 
 }
