@@ -30,9 +30,10 @@ public class Test {
 		System.out.println(y);
 		System.out.println(z);
 		
-		int[] intArray = null;
-		System.out.println();
-		System.out.println(intArray == null);
+		System.out.println(name1.hashCode());
+		System.out.println(name2.hashCode());
+		System.out.println(name3.hashCode());
+		
 	}
 
 }
