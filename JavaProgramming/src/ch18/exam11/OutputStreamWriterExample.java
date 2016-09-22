@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-public class OutputStreamReaderExample {
+public class OutputStreamWriterExample {
 
 	public static void main(String[] args) throws IOException {
 		OutputStream os = System.out;
