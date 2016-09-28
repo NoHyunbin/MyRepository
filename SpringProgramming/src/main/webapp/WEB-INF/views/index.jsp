@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 
 <!DOCTYPE html>
 <html>
@@ -6,6 +6,6 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		유은지 정신차려
+		myapp 홈 페이지 입니다.
 	</body>
 </html>
