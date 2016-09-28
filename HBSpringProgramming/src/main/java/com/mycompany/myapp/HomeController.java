@@ -11,13 +11,13 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@RequestMapping("/")
-	public String index() { 
+	public String home() { 
 		logger.info("home() 실행"); 
 		return "index";
 	}
 	
 	@RequestMapping("/news")
-	public String news() {
+	public String index() {
 		logger.info("news() 실행");
 		return "news";
 	}
