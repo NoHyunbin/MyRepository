@@ -6,6 +6,6 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		join 홈 페이지 입니다.
+		logout 홈 페이지 입니다.
 	</body>
 </html>

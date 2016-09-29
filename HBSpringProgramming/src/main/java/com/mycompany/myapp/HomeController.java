@@ -13,13 +13,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String home() { 
 		logger.info("home() 실행"); 
-		return "index";
-	}
-	
-	@RequestMapping("/news")
-	public String index() {
-		logger.info("news() 실행");
-		return "news";
+		return "home";
 	}
 	
 }
