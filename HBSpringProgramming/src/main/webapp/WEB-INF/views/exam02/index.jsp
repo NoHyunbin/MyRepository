@@ -6,7 +6,9 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		Exam02
+		<a href="/myapp" style="color:blue; font-size:200%"><b>Hyunbin's Spring Programming</b></a>
+		<hr/>
+		<p style="font-size:150%;"><b>Exam02</b></p>
 		<hr/>
 		<a href="/myapp/exam02/join?mid=user1&mname=홍길동&mage=30">가입</a> <br/>
 		<a href="/myapp/exam02/login?id=user1&password=12345">로그인</a> <br/>

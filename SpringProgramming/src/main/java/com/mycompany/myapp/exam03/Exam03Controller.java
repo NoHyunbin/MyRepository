@@ -31,7 +31,6 @@ public class Exam03Controller {
 		logger.info("maddress1 : " + member.getMaddress1());
 		logger.info("maddress2 : " + member.getMaddress2());
 		logger.info("mbirth : " + member.getMbirth());
-		
 		return "exam03/index";
 	}
 

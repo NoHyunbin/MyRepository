@@ -6,11 +6,13 @@
 		<meta charset="UTF-8"> 
 	</head>
 	<body>
-		Exam03
+		<a href="/myapp" style="color:blue; font-size:200%"><b>Hyunbin's Spring Programming</b></a>
+		<hr/>
+		<p style="font-size:150%;"><b>Exam03</b></p>
 		<hr/>
 		[회원 가입 폼] <br/>
 		<form action="/myapp/exam03/join">
-			아이디 : <input type="text" name="mid" value="Hallucination"/> <br/>
+		을 입력하세요 	아이디 : <input type="text" name="mid" value="Hallucination"/> <br/>
 			이름 : <input type="text" name="mname" value="노현빈"/> <br/>
 			비밀번호 : <input type="password" name="mpassword" value="12345"/> <br/>
 			이메일 : <input type="email" name="memail" value="gusqls0810@naver.com"/> <br/>
