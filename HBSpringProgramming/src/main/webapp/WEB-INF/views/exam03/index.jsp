@@ -51,6 +51,7 @@
 				--%>
 				<input type="image" src="/myapp/resources/image/join.png" width="150"/>
 		</form>
+		<br/>
 		<form action="/myapp">
 			<input type="image" src="/myapp/resources/image/main.png" width="150"/>
 		</form>
