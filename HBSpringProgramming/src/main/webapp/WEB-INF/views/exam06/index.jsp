@@ -17,7 +17,14 @@
 		4. <a href="/myapp/exam06/method1?mid=Hallu&mname=NoHyunbin">HttpServletRequest 변수 선언</a> <br/>
 		5. <a href="/myapp/exam06/method2">HttpServletResponse 변수 선언</a> <br/>
 		6. <a href="/myapp/exam06/method3">RequestHeader 변수 선언</a> <br/>
-		7. <a href="/myapp/exam06/method4">CookieValue 변수 선언</a> <br/>
-		8. <a href="/myapp/exam06/method5">HttpSession 변수 선언</a> <br/>
+		
+		7-1) <a href="/myapp/exam06/method4CreateCookie">Cookie 생성</a> <br/>
+		7-2) <a href="/myapp/exam06/method4ReceiveCookieHow1">Cookie 받기(방법 1)</a> <br/>
+		7-3) <a href="/myapp/exam06/method4ReceiveCookieHow2">Cookie 받기(방법 2)</a> <br/>
+		7-4) <a href="/myapp/exam06/method4DeleteCookie">Cookie 삭제</a> <br/>
+		
+		8-1) <a href="/myapp/exam06/method5SetObject">HttpSession에 객체 저장</a><br/>
+		8-2) <a href="/myapp/exam06/method5GetObject">HttpSession에서 객체 얻기</a> <br/>
+		8-3) <a href="/myapp/exam06/method5RemoveObject">HttpSession에서 객체 제거</a> <br/>
 	</body>
 </html>
