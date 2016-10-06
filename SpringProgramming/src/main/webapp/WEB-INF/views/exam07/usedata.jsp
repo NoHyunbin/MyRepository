@@ -42,33 +42,35 @@
 		<br/>
 		
 		[컬렉션 이용하기] <br/>
-		<table style="border-collapse: collapse; border: 1px solid black; width: 600px">
+		<table style="border-collapse: collapse; border: 1px solid black; width: 300px">
 			<tr style="background-color: #9966FF">
 				<td style="border: 1px solid black;">번호</td>
 				<td style="border: 1px solid black;">제목</td>
 				<td style="border: 1px solid black;">내용</td>
 				<td style="border: 1px solid black;">조회수</td>
 			</tr>
-<%-- 			
+<%-- 	
 			<%List<Board> list = (List<Board>) request.getAttribute("boardlist");%>
-			<%for(Board b : list) {%>
-				<tr>
-					<td style="border: 1px solid black;"><%=b.getBno()%><br/></td>
-					<td style="border: 1px solid black;"><%=b.getTitle()%><br/></td>
-					<td style="border: 1px solid black;"><%=b.getContent()%><br/></td>
-					<td style="border: 1px solid black;"><%=b.getHitcount()%><br/> <br/></td>
-				</tr>
+			<%if(list != null) {%>
+				<%for(Board b : list) {%>
+					<tr>
+						<td style="border: 1px solid black;"><%=b.getBno()%><br/></td>
+						<td style="border: 1px solid black;"><%=b.getTitle()%><br/></td>
+						<td style="border: 1px solid black;"><%=b.getContent()%><br/></td>
+						<td style="border: 1px solid black;"><%=b.getHitcount()%><br/> <br/></td>
+					</tr>
+				<%}%>
 			<%}%>
  --%>			
 			<c:forEach var="b" items="${boardlist}"> <%-- 54~55와 같은 내용 --%>
 				<tr>
-					<td style="border: 1px solid black;">${b.bno}<br/></td>
-					<td style="border: 1px solid black;">${b.title}<br/></td>
-					<td style="border: 1px solid black;">${b.content}<br/></td>
-					<td style="border: 1px solid black;">${b.hitcount}<br/> <br/></td>
+					<td style="border: 1px solid black;">${b.bno}</td>
+					<td style="border: 1px solid black;">${b.title}</td>
+					<td style="border: 1px solid black;">${b.content}</td>
+					<td style="border: 1px solid black;">${b.hitcount}</td>
 				</tr>			
-			
 			</c:forEach>	
+			
 		</table>
 		
 	</body>

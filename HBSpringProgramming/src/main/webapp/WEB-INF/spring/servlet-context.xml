@@ -23,6 +23,13 @@
 	
 	<context:component-scan base-package="com.mycompany.myapp" />
 	
+	<!-- A를 관리 객체로 생성 -->
+	<beans:bean name="aObj" class="com.mycompany.myapp.exam09.A"/>
+	
+	<!-- B를 관리 객체로 생성 -->
+	<beans:bean name="bObj" class="com.mycompany.myapp.exam09.B"/>
+	
+	
 	
 	
 </beans:beans>
