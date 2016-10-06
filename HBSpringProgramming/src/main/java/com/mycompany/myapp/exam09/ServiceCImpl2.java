@@ -12,7 +12,7 @@ public class ServiceCImpl2 implements ServiceD {
 	
 	@Override
 	public void method() {
-		logger.info("method 실행");
+		logger.info("method2 실행");
 	}
 
 }
