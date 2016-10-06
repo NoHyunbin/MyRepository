@@ -53,7 +53,8 @@
 		<beans:property name="serviceA" ref="serviceA"/>
 		<beans:property name="serviceB" ref="serviceB"/>
 		<beans:property name="serviceC" ref="serviceCImpl1"/>
-		<beans:property name="serviceD" ref="serviceCImpl3"/>
+		<beans:property name="serviceD" ref="serviceCImpl2"/>
+<!-- 		<beans:property name="serviceD" ref="serviceCImpl3"/> -->
 	</beans:bean>
 	
 </beans:beans>
