@@ -8,7 +8,7 @@ import java.io.Reader;
 public class Kimoon {
 	
 	public static void main(String[] args) throws IOException {
-		Reader rd = new FileReader("src/test/ex.txt");
+		Reader rd = new FileReader("src/myExercise/ex.txt");
 		BufferedReader br = new BufferedReader(rd);
 		
 		int cur = 0;
