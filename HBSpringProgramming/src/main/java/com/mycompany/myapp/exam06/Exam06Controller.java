@@ -52,7 +52,7 @@ public class Exam06Controller {
 		logger.info("요청 URI : " + request.getRequestURI());
 		logger.info("요청 URL : " + request.getRequestURL());
 		logger.info("요청 방식 : " + request.getMethod());		
-		logger.info("시스템 파일 경로 : " + request.getRealPath("/WEB-INF/image/photo1.jpg")); // 얘는 잘 안씀
+//		logger.info("시스템 파일 경로 : " + request.getRealPath("/WEB-INF/image/photo1.jpg")); // 얘는 잘 안씀
 		logger.info("시스템 파일 경로 : " + request.getServletContext().getRealPath("/WEB-INF/image/photo1.jpg"));
 		return "exam06/index";
 	}
