@@ -16,7 +16,7 @@ import com.mycompany.myapp.exam11.dto.Member;
 import com.mycompany.myapp.exam11.service.Exam11BoardService;
 import com.mycompany.myapp.exam11.service.Exam11MemberService;
 
-@Controller // 컨트롤러의 이름은 클래스의 첫자를 소문자로한 이름인데 파라미터로 이름을 변경해줄 수 있다
+@Controller
 @RequestMapping("/exam11")
 public class Exam11Controller {
 	private static final Logger logger = LoggerFactory.getLogger(Exam11Controller.class);
@@ -30,7 +30,7 @@ public class Exam11Controller {
 	@RequestMapping("/index")
 	public String index() {
 		logger.info("index 처리");
-		return "exam11/index"; // "/WEB-INF/views" "exam11/index" ".jsp" -> servlet-context.xml에 앞뒤가 설정되어있다		
+		return "exam11/index";
 	}
 	
 	@RequestMapping(value="/memberJoin", method=RequestMethod.GET)
@@ -81,10 +81,10 @@ public class Exam11Controller {
 		
 	}
 	
-	@RequestMapping(value="/memberLogout", method=RequestMethod.POST)
+	@RequestMapping("/memberLogout")
 	public String memberLogout() {
 		logger.info("memberLogout(GET) 처리");
-		return "redirect:/exam11/index";
+		return "exam11/index";
 	}
 	
 	@RequestMapping(value="/boardWrite", method=RequestMethod.GET)

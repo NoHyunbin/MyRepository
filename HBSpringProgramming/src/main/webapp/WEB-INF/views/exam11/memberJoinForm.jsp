@@ -8,10 +8,11 @@
 	<body>
 		<a href="/myapp" style="color:blue; font-size:200%"><b>Hyunbin's Spring Programming</b></a>
 		<hr/>
-		<p style="font-size:150%;"><b>Exam03</b></p>
+		<p style="font-size:150%;"><b>Exam11</b></p>
 		<hr/>
-		[회원 가입 폼] <br/>
-		<form action="/myapp/exam03/join">
+		
+		[회원 가입 폼] <br/><br/>
+		<form method="post" action="/myapp/exam11/memberJoin">
 			아이디 : <input type="text" name="mid" value="Hallucination"/> <br/>
 			이름 : <input type="text" name="mname" value="노현빈"/> <br/>
 			비밀번호 : <input type="password" name="mpassword" value="12345"/> <br/>
@@ -43,17 +44,13 @@
 				</select> <br/>
 				
 			생년월일 : <input type="date" name="mbirth" value="1990-08-10"/>
-				<br/><br>
+				<br/>
 			
 				<%--
 				<input type="submit" value="가입"/>
 				<button>가입</button>
 				--%>
 				<input type="image" src="/myapp/resources/image/join.png" width="150"/>
-		</form>
-		<br/>
-		<form action="/myapp">
-			<input type="image" src="/myapp/resources/image/main.png" width="150"/>
 		</form>
 	</body>
 </html>
