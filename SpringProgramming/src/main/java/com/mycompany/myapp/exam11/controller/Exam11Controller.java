@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mycompany.myapp.exam11.dto.Board;
 import com.mycompany.myapp.exam11.dto.Member;
+import com.mycompany.myapp.exam11.service.Exam11BoardService;
 import com.mycompany.myapp.exam11.service.Exam11MemberService;
 
 @Controller // 컨트롤러의 이름은 클래스의 첫자를 소문자로한 이름인데 파라미터로 이름을 변경해줄 수 있다
