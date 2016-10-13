@@ -30,7 +30,6 @@ public class Exam11BoardDao {
 			board.setBwriter("글쓴이" + i);
 			list.add(board);
 		}
-		
 		return list; 
 	}
 	
@@ -45,12 +44,10 @@ public class Exam11BoardDao {
 
 	public void update(Board board) {
 		logger.info("update 처리");
-		
 	}
 
 	public void delete(int bno) {
 		logger.info("delete 처리");
-		
 	}
 
 }

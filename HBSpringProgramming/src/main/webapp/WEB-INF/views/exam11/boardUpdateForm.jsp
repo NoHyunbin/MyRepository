@@ -6,6 +6,11 @@
 		<meta charset="UTF-8"> 
 	</head>
 	<body>
+		<a href="/myapp" style="color:blue; font-size:200%"><b>Hyunbin's Spring Programming</b></a>
+		<hr/>
+		<p style="font-size:150%;"><b>Exam11</b></p>
+		<hr/>
+
 		게시물 수정
 		<hr/>
 		<form method="post" action="/myapp/exam11/boardUpdate">
