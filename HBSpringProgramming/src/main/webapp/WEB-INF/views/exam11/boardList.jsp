@@ -22,7 +22,7 @@
 				<td style="border: 1px solid black;">글쓴이</td>
 			</tr>
 
-			<c:forEach var="board" items="${boardlist}"> <%-- 54~55와 같은 내용 --%>
+			<c:forEach var="board" items="${boardlist}">
 				<tr>
 					<td style="border: 1px solid black;">${board.btitle}</td>
 					<td style="border: 1px solid black;">${board.bcontent}</td>
