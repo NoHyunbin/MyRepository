@@ -13,7 +13,7 @@ public class Exam01 {
 		Class.forName("oracle.jdbc.OracleDriver");
 		
 		// 연결 요청을 해서 연결 객체를 얻기
-		Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl",	"tester1", "kosa12345");
+		Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "tester1", "kosa12345");
 		
 		// SQL문을 보내고 실행시킴
 		String sql = "select empno, ename from emp";

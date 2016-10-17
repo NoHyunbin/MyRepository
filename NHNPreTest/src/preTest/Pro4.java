@@ -27,16 +27,14 @@ public class Pro4 {
 
         for (Integer number : numberList) {
             min = min + String.valueOf(number);
-        } 
-        min = min.trim();
+        }
         
         numberList.sort(new MaxComparator());
         String max="";
 
         for (Integer number : numberList) {
             max = max + String.valueOf(number);
-        } 
-        max = max.trim();
+        }
        
 //    	System.out.println(min);
 //    	System.out.println(max);
