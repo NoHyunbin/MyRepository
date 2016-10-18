@@ -112,4 +112,4 @@ select empno, ename, sal from emp where not sal in (250, 300, 500);
 
 -- 세번째 미션
 -- 1
-select empno, ename from emp where ename like '김%';
+select empno, ename from emp where ename like '김%' or ename like '%기%';
