@@ -40,8 +40,11 @@ insert into account(ano, abalance) values('111-112', 0);
 commit;
 
 -- 계좌이체 : 출금작업 + 입금작업 --> 트랜잭션 작업 = All or Nothing
--- 출금작업
-update account set abalance=abalance-10000 where ano='111-111';
-select * from account;
--- 입금작업
-update account set abalance=abalance+10000 where ano='111-113';
+    -- 출금작업
+    update account set abalance=abalance-10000 where ano='111-111';    
+    -- 입금작업
+    update account set abalance=abalance+10000 where ano='111-113';
+-- 출금은 성공했으나, 입금이 실패했기 때문에 전체를 실패처리해야함
+rollback;
+-- 출금은 성공했고, 입금도 성공했다면 전체를 영구반영 처리해야함
+commit;
