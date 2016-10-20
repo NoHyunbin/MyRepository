@@ -10,7 +10,7 @@ public class Sphere {
     	this.diameter = 1;
     }
     
-    public Sphere(int diameter) {
+    public Sphere(int diameter) { 
 		this.diameter = diameter;
 	}
     
