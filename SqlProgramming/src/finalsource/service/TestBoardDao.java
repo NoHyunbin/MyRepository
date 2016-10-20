@@ -16,7 +16,7 @@ public class TestBoardDao {
 //		testSelectByBno();
 //		testSelectByBtitle();
 //		testUpdate();
-		testDeleteByBno();
+		testDeleteByBno(); 
 
 	}
 	
