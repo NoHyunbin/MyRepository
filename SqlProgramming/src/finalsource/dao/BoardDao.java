@@ -17,14 +17,11 @@ public class BoardDao {
 	}
 	
 	public int insert(Board board) throws SQLException {
-		String sql = "insert into board(bno, btitle, bcontent, bwriter, bhitcount, bdate) values(?, ?, ?, ?, ?, ?)";
+		String sql = "insert into board(bno, btitle, bcontent, bwriter, bhitcount, bdate) values(seq_board_bno.nextval, ?, ?, ?, 0, sysdate)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setInt(1, board.getBno());
-		pstmt.setString(2, board.getBtitle());
-		pstmt.setString(3, board.getBcontent());
-		pstmt.setString(4, board.getBwriter());
-		pstmt.setInt(5, board.getBhitcount());
-		pstmt.setDate(6, new Date(board.getBdate().getTime()));
+		pstmt.setString(1, board.getBtitle());
+		pstmt.setString(2, board.getBcontent());
+		pstmt.setString(3, board.getBwriter());
 		int rowNo = pstmt.executeUpdate();
 		pstmt.close();
 		return rowNo;
