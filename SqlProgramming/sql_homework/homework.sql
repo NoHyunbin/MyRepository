@@ -1,0 +1,10 @@
+-- Chapter01
+-- 1. 테이블
+-- 2. 로우, 컬럼
+-- 3. select
+-- 4. DML ( Data Manipulation language )
+-- 5. DDL ( Data Definition Language )
+-- 6. DCL ( Data Control Language )
+-- 7. SQL ( Structured Query Language )
+-- 8. SQL * Plus
+-- 9. 4
