@@ -1,4 +1,5 @@
 -- Chapter13. 시퀀스와 인덱스
+
 -- Section01 시퀀스 생성
 create sequence seq_1;
 -- 다음 수 얻기
