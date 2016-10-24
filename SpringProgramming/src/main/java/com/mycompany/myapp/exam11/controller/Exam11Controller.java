@@ -30,7 +30,7 @@ public class Exam11Controller {
 	@RequestMapping("/index")
 	public String index() {
 		logger.info("index 처리");
-		return "exam11/index"; // "/WEB-INF/views" "exam11/index" ".jsp" -> servlet-context.xml에 앞뒤가 설정되어있다		
+		return "exam11/index"; // "/WEB-INF/views/" "exam11/index" ".jsp" -> servlet-context.xml에 앞뒤가 설정되어있다		
 	}
 	
 	@RequestMapping(value="/memberJoin", method=RequestMethod.GET)
