@@ -33,6 +33,9 @@ public class Exam12Controller {
 	@RequestMapping(value="/join", method=RequestMethod.POST)
 	public String join(Member member) {
 		logger.info("join 처리");
+		if ( member == null ) {
+			throw new RuntimeException();
+		}
 		exam12Service.join(member);
 		return "redirect:/exam12/index";
 	}

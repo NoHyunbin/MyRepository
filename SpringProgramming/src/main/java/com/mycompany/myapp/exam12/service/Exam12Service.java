@@ -1,7 +1,6 @@
 package com.mycompany.myapp.exam12.service;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
@@ -11,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.mycompany.myapp.exam12.dao.MemberDao;
+import com.mycompany.myapp.exam12.dao.Exam12Dao;
 import com.mycompany.myapp.exam12.dto.Member;
 
 @Component
@@ -20,8 +19,9 @@ public class Exam12Service {
 	
 	@Autowired
 	private DataSource dataSource;
+	
 	@Autowired
-	private MemberDao dao;
+	private Exam12Dao dao;
 
 	public void join(Member member) {
 		Connection conn = null;
