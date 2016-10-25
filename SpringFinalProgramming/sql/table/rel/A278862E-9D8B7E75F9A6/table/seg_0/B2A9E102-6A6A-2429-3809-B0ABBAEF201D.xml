@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2A9E102-6A6A-2429-3809-B0ABBAEF201D" name="photoboard">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-25 09:43:53 UTC</createdTime>
+<ownerDesignName>table</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+</Table>
