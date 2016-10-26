@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F991C421-CAAA-1925-DB78-1007D2B114D6" name="freeboard">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:31:21 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bno" id="9F6E04C7-97F4-ABB8-A3DB-92273646DC3E">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="btitle" id="2D1BA630-972B-404F-0713-A0FA414AA91D">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bcontent" id="8E308612-5085-6DF4-838F-698EF2D7CF52">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bwriter" id="F662E74C-44CE-2538-314A-BCEFE9B71348">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75A4E341-FB2B-F9D0-63E9-4F68151AD829" referredColumn="1E0C7544-1849-964D-4175-63953E84AEE8"/>
+</associations>
+</Column>
+<Column name="bhitcount" id="90C23885-57CA-DF49-E1E4-98C8A777E7F3">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bdate" id="4C0355E1-335B-F579-52A3-2FD465B6508E">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 00:36:28 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D1EE114-88F5-F7E7-43F4-DF1C34EB7B33" name="freeboard_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 03:21:07 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F6E04C7-97F4-ABB8-A3DB-92273646DC3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B74F5B5-0140-D54E-0CAC-862E537801A7" name="freeboard_member_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-10-26 03:21:44 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F662E74C-44CE-2538-314A-BCEFE9B71348"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
