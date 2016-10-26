@@ -66,7 +66,8 @@ public class MemberService {
 	}
 	
 	public int modify(Member member) {
-		
+		memberDao.update(member);
+		return MODIFY_SUCCESS;
 	}
 	
 	public int withdraw(String mpassword, HttpSession session) {
@@ -79,7 +80,9 @@ public class MemberService {
 	}
 	
 	public boolean isMid(String mid) {
-	
+		Member member = memberDao.selectByMid(mid);
+		if ( member == null ) return false;
+		return true;	
 	}
 
 }
