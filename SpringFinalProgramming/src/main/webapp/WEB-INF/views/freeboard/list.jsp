@@ -23,7 +23,7 @@
 			<a href="write">[글쓰기]</a>
 		</c:if>
 		
-		<br/><br/>
+		<br/>
 		<table style="border-collapse: collapse; border: 1px solid black; width: 600px">
 			<tr style="background-color: #9966FF">
 				<td style="border: 1px solid black;">번호</td>
