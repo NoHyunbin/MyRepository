@@ -17,7 +17,7 @@ public class FreeBoardDao {
 	private JdbcTemplate jdbcTemplate;
 	
 	public int insert(FreeBoard freeBoard) {
-		String sql = "insert into freeboard(bno, btitle, bcontent, bwriter, bhitcount, bdate) values(seq_freeboard_bno.nextbal, ?, ?, ?, 0, sysdate)";
+		String sql = "insert into freeboard(bno, btitle, bcontent, bwriter, bhitcount, bdate) values(seq_freeboard_bno.nextval, ?, ?, ?, 0, sysdate)";
 		int row = jdbcTemplate.update(
 				sql,
 				freeBoard.getBtitle(),
@@ -67,7 +67,7 @@ public class FreeBoardDao {
 		String sql = "";
 		sql += "select rn, bno, btitle, bwriter, bhitcount, bdate ";
 		sql += "from ( ";
-		sql += "select rownum rn, bno, btitle, bcontent, bwriter, bhitcount, bdate ";
+		sql += "select rownum rn, bno, btitle, bwriter, bhitcount, bdate ";
 		sql += "from (select bno, btitle, bwriter, bhitcount, bdate from freeboard order by bno desc) ";
 		sql += "where rownum<=? ";
 		sql += ") ";
