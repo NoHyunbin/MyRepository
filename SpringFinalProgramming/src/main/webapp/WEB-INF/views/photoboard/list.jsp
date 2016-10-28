@@ -6,6 +6,10 @@
 	<head>
 		<meta charset="UTF-8"> 
 		<style type="text/css">
+			* {
+				font-family: 돋움;
+				font-size: 12px;
+			}
 			a {
 				text-decoration: none;
 				color: black;
@@ -16,7 +20,7 @@
 		</style>
 	</head>
 	<body>
-		자유 게시판
+		포토 게시판
 		<hr/>
 		
 		<c:if test="${login != null}">
@@ -24,27 +28,29 @@
 		</c:if>
 		
 		<br/>
-		<table style="border-collapse: collapse; border: 1px solid black; width: 600px">
-			<tr style="background-color: #9966FF">
-				<td style="border: 1px solid black;">번호</td>
-				<td style="border: 1px solid black;">제목</td>
-				<td style="border: 1px solid black;">글쓴이</td>
-				<td style="border: 1px solid black;">조회수</td>
-				<td style="border: 1px solid black;">날짜</td>
+		<table style="width:600px">
+			<tr>
+				<td>
+					<c:forEach var="photoBoard" items="${list}">
+						<a href="info?bno=${photoBoard.bno}">
+							<div style="width:120px; height:130px; margin:5px; display:inline-block; background-image:url(showPhoto?savedfile=${photoBoard.savedfile}); background-size: 120px 130px;">
+								<div style="height:100px;">
+									<span style="color:white; font-size:12px">${photoBoard.bdate}</span>
+								</div>
+								<div>
+									<table style="width:100%; height:30px; background-color:black; opacity: 0.5;">
+										<tr>
+											<td style="text-align:left; color:white">${photoBoard.btitle}</td>
+											<td style="text-align:right; color:aqua;">${photoBoard.bhitcount}</td>
+										</tr>
+									</table>						
+								</div>
+							</div>
+						</a>
+					</c:forEach>				
+				</td>
 			</tr>
-
-			<c:forEach var="freeboard" items="${list}"> 
-				<tr>
-					<td style="border: 1px solid black;">${freeboard.bno}</td>
-					<td style="border: 1px solid black;">
-						<a href="info?bno=${freeboard.bno}">${freeboard.btitle}</a></td>
-					<td style="border: 1px solid black;">${freeboard.bwriter}</td>
-					<td style="border: 1px solid black;">${freeboard.bhitcount}</td>
-					<td style="border: 1px solid black;">${freeboard.bdate}</td>
-				</tr>			
-			</c:forEach>	
 		</table>
- 		<br/>
  		
 		<div style="width: 600px">
 			<a href="list?pageNo=1">[처음]</a>

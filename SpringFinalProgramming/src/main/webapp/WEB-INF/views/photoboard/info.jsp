@@ -7,39 +7,42 @@
 		<meta charset="UTF-8"> 
 	</head>
 	<body>
-		글내용
+		사진 정보
 		<hr/>
-		<table>
+		<table style="width: 570px">
 			<tr>
 				<td style="background-color:#9966FF; width:70px">번호</td>
-				<td>${freeboard.bno}</td>
+				<td>${photoboard.bno}</td>
 			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">제목</td>
-				<td>${freeboard.btitle}</td>
+				<td>${photoboard.btitle}</td>
 			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">내용</td>
-				<td><pre>${freeboard.bcontent}</pre></td>
+				<td><pre>${photoboard.bcontent}</pre></td>
 			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">글쓴이</td>
-				<td>${freeboard.bwriter}</td>
+				<td>${photoboard.bwriter}</td>
 			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">조회수</td>
-				<td>${freeboard.bhitcount}</td>
+				<td>${photoboard.bhitcount}</td>
 			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">날짜</td>
-				<td>${freeboard.bdate}</td>
+				<td>${photoboard.bdate}</td>
 			<tr>
-		</table>
-		
+			<tr>
+				<td style="background-color:#9966FF; width:70px">사진</td>
+				<td><img src="showPhoto?savedfile=${photoboard.savedfile}" width="500px"/></td>
+			<tr>
+		</table>		
 		<div>
-			<c:if test="${login == freeboard.bwriter}">
-				<a href="modify?bno=${freeboard.bno}">[수정]</a>
-				<a href="remove?bno=${freeboard.bno}">[삭제]</a>
+			<c:if test="${login == photoboard.bwriter}">
+				<a href="modify?bno=${photoboard.bno}">[수정]</a>
+				<a href="remove?bno=${photoboard.bno}">[삭제]</a>
 			</c:if>
 			<a href="list">[목록]</a>
 		
