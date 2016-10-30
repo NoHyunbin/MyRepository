@@ -13,27 +13,27 @@
 			<tr>
 				<td style="background-color:#9966FF; width:70px">번호</td>
 				<td>${freeboard.bno}</td>
-			</tr>
+			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">제목</td>
 				<td>${freeboard.btitle}</td>
-			</tr>
+			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">내용</td>
 				<td><pre>${freeboard.bcontent}</pre></td>
-			</tr>
+			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">글쓴이</td>
 				<td>${freeboard.bwriter}</td>
-			</tr>
+			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">조회수</td>
 				<td>${freeboard.bhitcount}</td>
-			</tr>
+			<tr>
 			<tr>
 				<td style="background-color:#9966FF; width:70px">날짜</td>
 				<td>${freeboard.bdate}</td>
-			</tr>
+			<tr>
 		</table>
 		
 		<div>

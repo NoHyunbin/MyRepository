@@ -6,11 +6,10 @@
 		<meta charset="UTF-8"> 
 	</head>
 	<body>
-		글수정
+		글쓰기
 		<hr/>
 		<form method="post">
-			<input type="hidden" name="bno" value="${freeboard.bno}"/>
-	 		<table>
+			<table>
 				<tr>
 					<td style="background-color:#9966FF; width:70px">제목</td>
 					<td><input type="text" name="btitle" style="width: 600px;" value="${freeboard.btitle}"/></td>
@@ -18,9 +17,9 @@
 				<tr>
 					<td style="background-color:#9966FF; width:70px">내용</td>
 					<td><textarea name="bcontent" style="width:600px; height:200px">${freeboard.bcontent}</textarea></td>
-				</tr>				
+				</tr>
 			</table>
-			<input type="submit" value="글수정"/>
+			<input type="submit" value="글쓰기"/>
 		</form>
 	</body>
 </html>
