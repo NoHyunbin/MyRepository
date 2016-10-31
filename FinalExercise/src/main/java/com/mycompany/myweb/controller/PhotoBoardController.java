@@ -132,6 +132,15 @@ public class PhotoBoardController {
 		return "photoboard/info";
 	}
 	
+	@RequestMapping("/info2")
+	public String info2(int bno, Model model) {
+		PhotoBoard photoBoard = photoBoardService.info(bno);
+		photoBoard.setBhitcount(photoBoard.getBhitcount());
+		photoBoardService.modify(photoBoard);
+		model.addAttribute("photoboard", photoBoard);
+		return "photoboard/info";
+	}
+	
 	@RequestMapping(value="/modify", method=RequestMethod.GET)
 	public String modifyForm(int bno, Model model) {
 		PhotoBoard photoBoard = photoBoardService.info(bno);
@@ -143,6 +152,9 @@ public class PhotoBoardController {
 	public String modify(PhotoBoard photoBoard, HttpSession session) {
 		try {
 			PhotoBoard dbPhotoBoard = photoBoardService.info(photoBoard.getBno());
+
+			dbPhotoBoard.setBtitle(photoBoard.getBtitle());
+			dbPhotoBoard.setBcontent(photoBoard.getBcontent());
 
 			dbPhotoBoard.setOriginalfile(photoBoard.getPhoto().getOriginalFilename());
 			String savedfile = new Date().getTime() + photoBoard.getPhoto().getOriginalFilename();	

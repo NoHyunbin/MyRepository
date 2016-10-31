@@ -31,5 +31,6 @@
 			</table>
 			<input type="submit" value="글수정"/>
 		</form>
+		<a href="/myweb2/photoboard/info2?bno=${photoboard.bno}"><input type="image" src="/myweb2/resources/cancel.jpg"/></a>
 	</body>
 </html>

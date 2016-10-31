@@ -29,5 +29,6 @@
 			</table>
 			<input type="submit" value="글쓰기"/>
 		</form>
+		<a href="/myweb2/photoboard/list"><input type="image" src="/myweb2/resources/cancel.jpg"/></a>
 	</body>
 </html>
