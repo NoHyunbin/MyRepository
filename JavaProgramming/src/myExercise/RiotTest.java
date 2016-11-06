@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class RiotTest {
 	public final static double PI = 3.141593;
 	public final static double E = 2.718282;
-	public int index = 0;
 
 	public static void main(String[] args) throws IOException {
 		Reader reader = new FileReader("src/myExercise/riot_test_case.txt");

@@ -6,9 +6,10 @@ public class Test {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String[] str = {"ss", "xx"};
-		int i = str.length;
-
+		double pi = Math.PI;
+		double e = Math.E;
+		System.out.println(pi);
+		System.out.println(Math.pow(e, 2));
 		
 	}
 
