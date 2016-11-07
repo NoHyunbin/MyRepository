@@ -20,8 +20,6 @@
 				<a href="<%=pageContext.getServletContext().getContextPath()%>/member/logout">로그아웃</a>
 			</c:if>
 			<br/>
-
- 		2. <a href="${pageContext.servletContext.contextPath}/freeboard/list">자유 게시판</a> <br/> 
 		2. <a href="${pageContext.servletContext.contextPath}/photoboard/list?pageNo=1">포토 게시판</a> <br/>
 	</body>
 </html>
