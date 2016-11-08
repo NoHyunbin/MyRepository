@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="151941D0-8B91-3ED1-AA71-D2F52D058B8D" name="Reservation">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:16:07 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rvtime" id="1F8283D2-AD04-C973-4F33-F6DC7F3B2729">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:09 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvperson" id="7943CA3A-69F5-C0B8-03B5-7E2A965B1F44">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:09 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvmid" id="8643A93D-1C1C-3202-7ED1-C6175D4EE73C">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:09 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvid" id="FB15C5E5-09DE-6296-9076-29295328F3CC">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:09 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA70460D-080C-40B1-6E22-6B9E0773422D" name="Reservation_PK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:09 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8643A93D-1C1C-3202-7ED1-C6175D4EE73C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

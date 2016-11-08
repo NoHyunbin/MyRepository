@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0AD6D749-A82C-4FAD-B7B9-4402CC874D78" name="Member">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:44:03 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mid" id="537302D5-456D-E97E-E8E2-8DBEE46E83EB">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mname" id="FE69E87F-A1D2-889A-B5EC-5AC88D2C9D9C">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mpassword" id="A7F447A8-F83F-C35D-E9DE-8675600BB07B">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mphone" id="14ADBF97-F9EE-4084-E908-4C456B32F9E2">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mbirth" id="80C77E85-0308-53BB-F949-8FDB0C036F61">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mlocation" id="A72A0928-8CA0-CD1D-8695-1C197D934A97">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mrank" id="710E2308-429E-5308-33CF-19AE43815CF4">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mpoint" id="5FDCC2EE-D3C6-E437-BDE5-1F91EEA46E19">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:56:42 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mresid" id="F526795C-7F8C-89AB-3B03-789BB2A83CB4">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:56:42 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Restaurant_resid" id="F28BC5FE-2FA2-9F12-63C2-1AEA01ACD0C9">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:55:53 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B64455A-7785-3405-2D37-BBAD85B21BF8" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</associations>
+</Column>
+<Column name="Reservation_rvmid" id="0918D318-CA60-DA53-E998-3A4A63D376AA">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:58:40 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F68FF71-611F-2A60-FA79-1A2673BFB9D5" referredColumn="8643A93D-1C1C-3202-7ED1-C6175D4EE73C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1A68A03-2247-A72D-E904-731CF00E490F" name="Member_PK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:47:55 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="537302D5-456D-E97E-E8E2-8DBEE46E83EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFF3A191-B551-0260-1C64-77655F6C3FC7" name="Member_Restaurant_FK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:55:53 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F28BC5FE-2FA2-9F12-63C2-1AEA01ACD0C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01133127-4BBF-4459-D94F-FD0938CADF6C" name="Member_Reservation_FK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:58:40 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0918D318-CA60-DA53-E998-3A4A63D376AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30325B2B-4C64-83BA-14D5-83EE1FE7374E" name="Restaurant">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 12:56:52 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="resid" id="54AA2AAF-E9AD-6187-941F-5A5515B91C95">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resname" id="E795A9AA-BF05-A26B-E1B8-8A44DE8A8015">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reslocation" id="449EAC0E-2486-2120-16EE-6D0E93F17AFF">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resseats" id="DAFF8A54-489A-5824-F992-429BD56ADD36">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resinfo" id="26AAC6CC-AA74-B0C0-E5FA-E9C5A9CB976E">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restel" id="21066091-CA24-71D6-71B0-CC39F0A9DF4D">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restime" id="CD4C4618-48FB-2280-3C71-9030CDDF89F7">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resphoto" id="8F61300D-B72D-3229-E7B8-1699B83772C0">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reservation_rvmid" id="EEDB63DC-7A82-073B-7AB0-EAD0A55E0539">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:58:59 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="758705E3-7FE3-4F42-7CEB-04051869C988" referredColumn="8643A93D-1C1C-3202-7ED1-C6175D4EE73C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64C0C206-650E-C0E5-675F-4CCD4B343DC1" name="Restaurant_PK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:15:49 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20851DED-FF88-26FD-4AE8-70501AD93C20" name="Restaurant_Reservation_FK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:58:59 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEDB63DC-7A82-073B-7AB0-EAD0A55E0539"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
