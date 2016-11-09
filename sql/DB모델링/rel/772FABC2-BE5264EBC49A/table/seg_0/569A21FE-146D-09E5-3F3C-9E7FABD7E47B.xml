@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="569A21FE-146D-09E5-3F3C-9E7FABD7E47B" name="Like">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:46:26 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lmid" id="89C8CA56-B711-7DB1-0E0B-4D79660585FE">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:47:38 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A193B736-45DA-58DE-A4A0-02062BA33ACA" referredColumn="537302D5-456D-E97E-E8E2-8DBEE46E83EB"/>
+</associations>
+</Column>
+<Column name="resid" id="A91D29D7-409A-A255-E681-54B9C0D66215">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:47:38 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A72907B-9581-FB8D-1FF3-BA3BD21D36DD" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE00DAE2-69A5-A6A9-B06D-A22002EAEAF6" name="Like_PK">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-08 16:12:21 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C8CA56-B711-7DB1-0E0B-4D79660585FE"/>
+<colUsage columnID="A91D29D7-409A-A255-E681-54B9C0D66215"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E27A5CD1-B32F-0535-AA11-08BC04335705" name="Like_Member_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 01:22:10 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C8CA56-B711-7DB1-0E0B-4D79660585FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBB6E4A2-EE5C-AC55-6896-D8141CC79A0B" name="Like_Restaurant_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 01:22:33 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A91D29D7-409A-A255-E681-54B9C0D66215"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

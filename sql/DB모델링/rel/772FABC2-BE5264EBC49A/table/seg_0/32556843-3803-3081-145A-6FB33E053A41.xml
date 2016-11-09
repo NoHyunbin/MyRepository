@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32556843-3803-3081-145A-6FB33E053A41" name="Reservation">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:25:20 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rvno" id="90C6235C-0690-0AF9-FFB7-DEE28BC3545E">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:37:37 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvtime" id="A9D47B28-63D3-D2EC-D1FB-9B199765C3B1">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:25:36 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvperson" id="03428D8B-32F9-4B2A-96AF-758E2A475C75">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:26:05 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rvmid" id="55D71419-2831-697E-09BB-0AE5E838B287">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:26:39 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C30EC7B8-1A56-4C93-527B-E1F3CF64D269" referredColumn="537302D5-456D-E97E-E8E2-8DBEE46E83EB"/>
+</associations>
+</Column>
+<Column name="rvresid" id="CA21FD69-4D37-DEB0-7219-9A9F7B605093">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:27:11 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45E8462F-848A-F36A-8C6B-B4D055CC1339" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CF3ACFD-95B3-40AF-E250-49BD75F55394" name="Reservation_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:37:37 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90C6235C-0690-0AF9-FFB7-DEE28BC3545E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4B69946-5CB8-4BC2-BAD0-EB8650789933" name="Reservation_Restaurant_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:27:30 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA21FD69-4D37-DEB0-7219-9A9F7B605093"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC233FBE-E90D-6FC5-4CD2-8019272684BD" name="Reservation_Member_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:27:44 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55D71419-2831-697E-09BB-0AE5E838B287"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

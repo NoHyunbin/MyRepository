@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4EA636E-DC56-7056-921C-AC3E82DF2122" name="Review">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:07:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="revno" id="25213E13-16D8-C6D2-D500-537E0D859E64">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:37:10 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revresid" id="E33C7A52-C7BA-8863-3AC8-790AADE0129D">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:07:52 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33C5D5ED-3A6B-D5C9-866D-255FA0BC6942" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</associations>
+</Column>
+<Column name="revmid" id="BE6E46ED-B2BB-BBDD-CC8C-CE88F14F89F9">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:08:57 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="590BFE1C-5E35-00CE-CE8D-EBD004D40C41" referredColumn="537302D5-456D-E97E-E8E2-8DBEE46E83EB"/>
+</associations>
+</Column>
+<Column name="revcontent" id="A02407A0-4469-7060-92FB-6339D35BC9BC">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:08:57 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revscore" id="266AD0F2-629A-2505-4EF2-FDA05A3377D5">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:08:57 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revdate" id="E683044E-AFD9-15A9-4D04-5185E3961092">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 00:08:57 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04E60B52-CFCC-1A2D-AEFB-18F1EF09AFD1" name="Review_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 05:37:10 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25213E13-16D8-C6D2-D500-537E0D859E64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97F61901-43F9-94FE-615D-47AAB6067B40" name="Review_Member_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 01:23:50 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE6E46ED-B2BB-BBDD-CC8C-CE88F14F89F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28C6804C-287D-F488-57B8-93C754D02322" name="Review_Restaurant_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 01:24:05 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E33C7A52-C7BA-8863-3AC8-790AADE0129D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

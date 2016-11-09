@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="796F58C6-D466-B23D-7238-40CC6DD9A9FC" name="Coupon">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:24:12 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnumber" id="C27F146A-7375-7C4A-FA64-C6ADD4A850B3">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cname" id="E5D9F2C9-AC52-E143-2E96-EAED9CE1072A">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cdday" id="4E356E70-DCD4-AB45-1CC5-7B030B3EBC80">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cinfo" id="A3B320BB-F374-42F9-C986-8C509327BBA5">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cresid" id="204C59F3-0EE8-E94E-3A5C-41F263D72445">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0683680D-6D07-4CD6-12EC-10EB3B1201F8" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+</associations>
+</Column>
+<Column name="cdisscount" id="44931DA6-CF2E-10E2-0933-011BA674F5B4">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35E510AB-C9B7-0C06-828C-856DFAA8A5A1" name="Coupon_PK">
+<createdBy>Hallu</createdBy>
+<createdTime>2016-11-08 13:28:23 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C27F146A-7375-7C4A-FA64-C6ADD4A850B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E12A411E-CF4E-1253-D0FE-E1F19E3ADBBE" name="Coupon_Restaurant_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-09 01:31:41 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="204C59F3-0EE8-E94E-3A5C-41F263D72445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
