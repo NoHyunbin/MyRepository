@@ -27,11 +27,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3FF41394-EF1D-3311-1463-CEC9A21B41BA" referredColumn="6CEC7491-4FE5-A28D-E419-9A135DC9F2E9"/>
-<colAssociation fkAssociation="974DEAC6-2A17-F9C5-4030-998A6C925134" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+<colAssociation fkAssociation="ABD0615C-FF7C-5A88-EDF4-6EF94342BFAE" referredColumn="6CEC7491-4FE5-A28D-E419-9A135DC9F2E9"/>
 </associations>
 </Column>
 <Column name="esavedfile" id="17F6F77A-5A59-4983-9CB0-B590AF572E18">
@@ -65,10 +64,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3FF41394-EF1D-3311-1463-CEC9A21B41BA" referredColumn="819D8EDB-153C-55BB-EEFB-367851FF9379"/>
+<colAssociation fkAssociation="ABD0615C-FF7C-5A88-EDF4-6EF94342BFAE" referredColumn="819D8EDB-153C-55BB-EEFB-367851FF9379"/>
 </associations>
 </Column>
 <Column name="eprice" id="02AB8E3D-C070-7520-3C03-7AE4A6B91915">
@@ -96,19 +95,9 @@
 <colUsage columnID="D8718F11-9B61-6706-6A4D-9F02404617BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="110A9EB8-9D66-B895-0DD1-F28E0843FAC2" name="Event_Restaurant_FK">
+<ind_PK_UK id="632A614A-2C6D-CDC1-85C4-CAA56D93631D" name="Event_MenuList_FK">
 <createdBy>Administrator</createdBy>
-<createdTime>2016-11-09 01:30:09 UTC</createdTime>
-<ownerDesignName>DB모델링</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="99ADBF74-F3C0-0357-0D6D-E0ED8DD40267"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4B0CC534-630A-C025-7FCF-7F10A632B118" name="Event_MenuList_FK">
-<createdBy>Administrator</createdBy>
-<createdTime>2016-11-09 01:30:33 UTC</createdTime>
+<createdTime>2016-11-10 01:02:40 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

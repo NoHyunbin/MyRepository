@@ -27,11 +27,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="059382C8-97C9-AB28-495E-389B83A57810" referredColumn="6CEC7491-4FE5-A28D-E419-9A135DC9F2E9"/>
-<colAssociation fkAssociation="B6631C64-7BD8-B2E6-3FCA-48290EE81940" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
+<colAssociation fkAssociation="50BA9AC6-CB3C-3731-24FD-0ADC068BEF0C" referredColumn="6CEC7491-4FE5-A28D-E419-9A135DC9F2E9"/>
 </associations>
 </Column>
 <Column name="ptablesum" id="36145861-7073-6A1C-208C-5B9C5F2B4574">
@@ -53,10 +52,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="059382C8-97C9-AB28-495E-389B83A57810" referredColumn="819D8EDB-153C-55BB-EEFB-367851FF9379"/>
+<colAssociation fkAssociation="50BA9AC6-CB3C-3731-24FD-0ADC068BEF0C" referredColumn="819D8EDB-153C-55BB-EEFB-367851FF9379"/>
 </associations>
 </Column>
 <Column name="pcount" id="CD53F5AD-5E2C-43E4-7DE7-EF0787FB73EE">
@@ -84,19 +83,9 @@
 <colUsage columnID="32AF74D2-E4F1-683F-0916-F744E74A8AA5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="25E97E04-262D-5818-8371-6D5A57D2FC92" name="Pos_Restaurant_FK">
-<createdBy>Park</createdBy>
-<createdTime>2016-11-09 12:24:47 UTC</createdTime>
-<ownerDesignName>DB모델링</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="32AF74D2-E4F1-683F-0916-F744E74A8AA5"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="17CFF64C-116F-4CB2-0F21-63900E08FD99" name="Pos_MenuList_FK">
-<createdBy>Park</createdBy>
-<createdTime>2016-11-09 12:25:06 UTC</createdTime>
+<ind_PK_UK id="3E409092-8056-CDEC-214D-987D9ACF17E6" name="Pos_MenuList_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2016-11-10 01:05:07 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
