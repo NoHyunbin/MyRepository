@@ -27,14 +27,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="974DEAC6-2A17-F9C5-4030-998A6C925134" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
 <colAssociation fkAssociation="3FF41394-EF1D-3311-1463-CEC9A21B41BA" referredColumn="6CEC7491-4FE5-A28D-E419-9A135DC9F2E9"/>
+<colAssociation fkAssociation="974DEAC6-2A17-F9C5-4030-998A6C925134" referredColumn="54AA2AAF-E9AD-6187-941F-5A5515B91C95"/>
 </associations>
 </Column>
-<Column name="ephoto" id="17F6F77A-5A59-4983-9CB0-B590AF572E18">
+<Column name="esavedfile" id="17F6F77A-5A59-4983-9CB0-B590AF572E18">
 <createdBy>Hallu</createdBy>
 <createdTime>2016-11-08 13:46:02 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
@@ -65,7 +65,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="3FF41394-EF1D-3311-1463-CEC9A21B41BA" referredColumn="819D8EDB-153C-55BB-EEFB-367851FF9379"/>
