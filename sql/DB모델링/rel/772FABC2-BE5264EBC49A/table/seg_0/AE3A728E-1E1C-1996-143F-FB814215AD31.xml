@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE3A728E-1E1C-1996-143F-FB814215AD31" name="CouponBox">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:16:40 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cbmid" id="296EB0D1-CE06-0E2D-0ABB-89DE9AA06E31">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:17:42 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7D2C22F-B66A-DE08-1584-6FCAA4860CCD" referredColumn="537302D5-456D-E97E-E8E2-8DBEE46E83EB"/>
+</associations>
+</Column>
+<Column name="cbnumber" id="EE957BA2-CA13-93F3-9504-AFE9DDBF225F">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:17:42 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE7878E4-2DD1-10CC-82E6-4BF6780103C3" referredColumn="C27F146A-7375-7C4A-FA64-C6ADD4A850B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A1E3994-3789-2C5D-478F-6F26E2327AE2" name="CouponBox_PK">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:17:42 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE957BA2-CA13-93F3-9504-AFE9DDBF225F"/>
+<colUsage columnID="296EB0D1-CE06-0E2D-0ABB-89DE9AA06E31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E501BCB6-9431-F4D6-7C7E-03EA3B62E96B" name="CouponBox_Member_FK">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:17:50 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="296EB0D1-CE06-0E2D-0ABB-89DE9AA06E31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DB33A86-047A-A557-3BEF-F7F4843024F8" name="CouponBox_Coupon_FK">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:18:02 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE957BA2-CA13-93F3-9504-AFE9DDBF225F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

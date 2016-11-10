@@ -41,7 +41,7 @@
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="resseats" id="DAFF8A54-489A-5824-F992-429BD56ADD36">
+<Column name="restables" id="DAFF8A54-489A-5824-F992-429BD56ADD36">
 <createdBy>Hallu</createdBy>
 <createdTime>2016-11-08 13:15:49 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
@@ -75,7 +75,7 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="restime" id="CD4C4618-48FB-2280-3C71-9030CDDF89F7">
+<Column name="resopen" id="CD4C4618-48FB-2280-3C71-9030CDDF89F7">
 <createdBy>Hallu</createdBy>
 <createdTime>2016-11-08 13:15:49 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
@@ -85,7 +85,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="resphoto" id="8F61300D-B72D-3229-E7B8-1699B83772C0">
+<Column name="resclose" id="D6B06A89-C731-E381-5675-CC3FA93C96BC">
+<createdBy>Park</createdBy>
+<createdTime>2016-11-09 12:18:59 UTC</createdTime>
+<ownerDesignName>DB모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ressavedfile" id="8F61300D-B72D-3229-E7B8-1699B83772C0">
 <createdBy>Hallu</createdBy>
 <createdTime>2016-11-08 13:15:49 UTC</createdTime>
 <ownerDesignName>DB모델링</ownerDesignName>
