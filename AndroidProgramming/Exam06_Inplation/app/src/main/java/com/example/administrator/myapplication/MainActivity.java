@@ -2,6 +2,7 @@ package com.example.administrator.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -36,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
             // Inflation
             LinearLayout itemLayout = (LinearLayout) layoutInflater.inflate(R.layout.light_item, null);
 
+
             // Data Setting
-            ImageView lightimage = (ImageView) itemLayout.findViewById(R.id.lightImage);
-            lightimage.setImageResource(light.getImage());
+            ImageView lightImage = (ImageView) itemLayout.findViewById(R.id.lightImage);
+            lightImage.setImageResource(light.getImage());
 
             TextView lightTitle = (TextView) itemLayout.findViewById(R.id.lightTitle);
-            lightTitle.setText(light.getImage());
+            lightTitle.setText(light.getTitle());
 
             TextView lightContent = (TextView) itemLayout.findViewById(R.id.lightContent);
             lightContent.setText(light.getContent());
