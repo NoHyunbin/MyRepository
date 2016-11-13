@@ -70,7 +70,7 @@ select * from emp where not ename like '%성%';
 select * from emp where comm=null;
 select * from emp where comm is null;
 select * from emp where comm is not null;
--- 3.1 오른차순 정렬을 위한 ASC
+-- 3.1 오름차순 정렬을 위한 ASC
 select * from emp order by sal;
 select * from emp order by sal asc;
 -- 3.2 내림차순 정렬을 위한 DESC

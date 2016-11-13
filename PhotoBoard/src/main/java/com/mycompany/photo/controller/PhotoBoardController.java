@@ -68,50 +68,15 @@ public class PhotoBoardController {
 		model.addAttribute("find", find);
 		model.addAttribute("list", list);
 		
-		return "photoboard/list";		
+		return "photoboard/list";
 	}
 	
 	@RequestMapping(value="/list", method=RequestMethod.POST)
-	public String findList(String pageNo, String find, Model model, HttpSession session) {
-		int intPageNo = 1;
-		if ( pageNo == null ) {
-			pageNo = (String) session.getAttribute("pageNo");
-			if ( pageNo != null ) {
-				intPageNo = Integer.parseInt(pageNo);
-			}
-		} else {
-			intPageNo = Integer.parseInt(pageNo);
-		}
-		session.setAttribute("pageNo", String.valueOf(intPageNo));
-		
-		int rowsPerPage = 8;
-		int pagesPerGroup = 5;
-		
-		int totalBoardNo = photoBoardService.getCount(find);
-		
-		int totalPageNo = totalBoardNo / rowsPerPage + ((totalBoardNo%rowsPerPage!=0)?1:0);
-		int totalGroupNo = totalPageNo / pagesPerGroup + ((totalPageNo%pagesPerGroup!=0)?1:0);
-		
-		int groupNo = (intPageNo-1) / pagesPerGroup + 1;
-		int startPageNo = (groupNo-1) * pagesPerGroup + 1;
-		int endPageNo = startPageNo + pagesPerGroup - 1;
-		if ( groupNo == totalGroupNo ) endPageNo = totalPageNo;
-		
-		List<PhotoBoard> list = photoBoardService.findList(intPageNo, rowsPerPage, find);	
-		
-		model.addAttribute("rowsPerPage", rowsPerPage);
-		model.addAttribute("pageNo", intPageNo);
-		model.addAttribute("pagesPerGroup", pagesPerGroup);
-		model.addAttribute("totalBoardNo", totalBoardNo);
-		model.addAttribute("totalPageNo", totalPageNo);
-		model.addAttribute("totalGroupNo", totalGroupNo);
-		model.addAttribute("groupNo", groupNo);
-		model.addAttribute("startPageNo", startPageNo);
-		model.addAttribute("endPageNo", endPageNo);
+	public String findList(String pageNo, String find, Model model) {
+		model.addAttribute("pageNo", pageNo);
 		model.addAttribute("find", find);
-		model.addAttribute("list", list);
-		
-		return "photoboard/list";		
+
+		return "redirect:/photoboard/list";		
 	}
 
 	@RequestMapping(value="/write", method=RequestMethod.GET)

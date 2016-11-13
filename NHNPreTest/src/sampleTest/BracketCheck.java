@@ -2,7 +2,6 @@ package sampleTest;
 
 import java.util.Stack;
 import java.io.BufferedReader;
-import java.lang.Exception;
 import java.io.InputStreamReader;
 
 public class BracketCheck {
