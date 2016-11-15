@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://192.168.0.29:8080/myandroid/lightList");
+                    URL url = new URL("http://172.20.10.3:8080/myandroid/lightList");
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.connect();
 
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
     public Bitmap getBitmap(String fileName) {
         Bitmap bitmap = null;
         try {
-            URL url = new URL("http://192.168.0.29:8080/myandroid/getImage?fileName=" + fileName);
+            URL url = new URL("http://172.20.10.3:8080/myandroid/getImage?fileName=" + fileName);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.connect();
 
