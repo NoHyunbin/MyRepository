@@ -31,19 +31,19 @@ public class FoodActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
-        imageLarge = (ImageView) findViewById(R.id.imageLarge);
+        imageLarge = (ImageView) findViewById(R.id.foodImageLarge);
 
         foodList = (ListView) findViewById(R.id.foodList);
         foodList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final Light light = (Light) foodAdapter.getItem(position);
+                final Food food = (Food) foodAdapter.getItem(position);
                 Thread thread = new Thread() {
                     @Override
                     public void run() {
-                        final Bitmap bitmap = getBitmap(light.getImageLargeFileName());
+                        final Bitmap bitmap = getBitmap(food.getImageLargeFileName());
                         imageLarge.post(new Runnable() {
                             @Override
                             public void run() {
@@ -66,7 +66,7 @@ public class FoodActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://192.168.0.29:8080/myandroid/foodList");
+                    URL url = new URL("http://172.20.10.3:8080/myandroid/foodList");
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.connect();
 
@@ -81,10 +81,8 @@ public class FoodActivity extends AppCompatActivity {
                             strJson += data;
                         }
                         br.close(); reader.close(); is.close();
-                        final List<Light> list = parseJson(strJson);
+                        final List<Food> list = parseJson(strJson);
                         foodList.post(new Runnable() {
-                            // post메소드가 메인 스레스에서 실행하게끔 요청한다.
-                            // 이렇게 하면 이 run()은 Main Thread가 실행한다.
                             @Override
                             public void run() {
                                 foodAdapter = new FoodAdapter(FoodActivity.this);
@@ -103,22 +101,22 @@ public class FoodActivity extends AppCompatActivity {
         thread.start();
     }
 
-    public List<Light> parseJson(String strJon) {
-        List<Light> list = new ArrayList<>();
+    public List<Food> parseJson(String strJon) {
+        List<Food> list = new ArrayList<>();
         try {
             JSONArray jsonArray = new JSONArray(strJon);
             for ( int i = 0 ; i < jsonArray.length() ; i++ ) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                Light light = new Light();
-                light.setImage(getBitmap(jsonObject.getString("image")));
+                Food food = new Food();
+                food.setImage(getBitmap(jsonObject.getString("image")));
                 if ( i == 0 ) {
-                    light.setImageLarge(getBitmap(jsonObject.getString("imageLarge")));
+                    food.setImageLarge(getBitmap(jsonObject.getString("imageLarge")));
                 }
-                light.setImageFileName(jsonObject.getString("image"));
-                light.setImageLargeFileName(jsonObject.getString("imageLarge"));
-                light.setTitle(jsonObject.getString("title"));
-                light.setContent(jsonObject.getString("content"));
-                list.add(light);
+                food.setImageFileName(jsonObject.getString("image"));
+                food.setImageLargeFileName(jsonObject.getString("imageLarge"));
+                food.setTitle(jsonObject.getString("title"));
+                food.setContent(jsonObject.getString("content"));
+                list.add(food);
             }
         } catch (JSONException e) {
             Log.i("mylog", e.getMessage());
@@ -129,7 +127,7 @@ public class FoodActivity extends AppCompatActivity {
     public Bitmap getBitmap(String fileName) {
         Bitmap bitmap = null;
         try {
-            URL url = new URL("http://192.168.0.29:8080/myandroid/getImage?fileName=" + fileName);
+            URL url = new URL("http://172.20.10.3:8080/myandroid/getImage?fileName=" + fileName);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.connect();
 

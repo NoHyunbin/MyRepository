@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.mycompany.myweb.dto.Food;
 import com.mycompany.myweb.dto.Light;
 
 @Controller
@@ -69,6 +70,24 @@ public class HomeController {
 		} catch ( Exception e ) {
 			e.printStackTrace();
 		}
+	}
+	
+	@RequestMapping("/foodList")
+	public String foodList(Model model) {
+        List<Food> list = new ArrayList<>();
+        list.add(new Food("food01.png", "food01_large.png"));
+        list.add(new Food("food02.png", "food02_large.png"));
+        list.add(new Food("food03.png", "food03_large.png"));
+        list.add(new Food("food04.png", "food04_large.png"));
+        list.add(new Food("food05.png", "food05_large.jpg"));
+        list.add(new Food("food01.png", "food01_large.png"));
+        list.add(new Food("food02.png", "food02_large.png"));
+        list.add(new Food("food03.png", "food03_large.png"));
+        list.add(new Food("food04.png", "food04_large.png"));
+        list.add(new Food("food05.png", "food05_large.jpg"));
+
+        model.addAttribute("list", list);
+        return "foodList";
 	}
 	
 }
