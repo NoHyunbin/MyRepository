@@ -34,12 +34,8 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Light(R.drawable.light3, "인테리어 조명08", "자녀방등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
         list.add(new Light(R.drawable.light4, "인테리어 조명09", "현관등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
         list.add(new Light(R.drawable.light5, "인테리어 조명10", "안방등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
-        list.add(new Light(R.drawable.light1, "인테리어 조명11", "거실등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
-        list.add(new Light(R.drawable.light2, "인테리어 조명12", "욕실등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
-        list.add(new Light(R.drawable.light3, "인테리어 조명13", "자녀방등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
-        list.add(new Light(R.drawable.light4, "인테리어 조명14", "현관등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
-        list.add(new Light(R.drawable.light5, "인테리어 조명15", "안방등으로 사용하면 좋습니다. 검은색 테두리와 백열등의 조화가 이쁩니다."));
 
+        // 아래에서 this는 MainActivity. Context를 상속하고있기 때문에 이게 가능
         LightAdapter lightAdapter = new LightAdapter(this);
         lightAdapter.setList(list);
 
